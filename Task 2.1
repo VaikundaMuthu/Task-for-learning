@@ -1,0 +1,18 @@
+numbers = int (input("enter the value for x(where x>2) ? "))
+x1 = 0
+x2 = 1
+count = 2
+if numbers <= 0:
+    print("please enter positive integer")
+elif numbers == 1:
+    print("fibonacci sequence is: ")
+    print(x1)
+else:    
+    print("fibonacci sequence is: ")
+    print(x1,",",x2)
+    while count <  numbers:
+        xth = x1 + x2
+        print(xth)
+        x1 = x2
+        x2 = xth
+        count += 1
